@@ -7,14 +7,13 @@ import br.com.vferneda.peoplemanagementapi.entity.People;
 import br.com.vferneda.peoplemanagementapi.exception.PeopleNotFoundException;
 import br.com.vferneda.peoplemanagementapi.repository.PeopleRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor(onConstructor = @__(@Autowired))
+@AllArgsConstructor
 public class PeopleService {
 
     private final PeopleRepository peopleRepository;
